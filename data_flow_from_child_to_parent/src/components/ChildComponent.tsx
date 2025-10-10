@@ -1,13 +1,10 @@
-interface ChildProps {
+import React from "react";
+
+interface props {
   onSendData: (data: string) => void; // define prop type
 }
 
-
-interface ChildProps {
-  onSendData: (data: string) => void; // define prop type
-}
-
-const ChildComponent: React.FC<ChildProps> = ({ onSendData }) => {
+const ChildComponent: React.FC<props> = ({ onSendData }) => {
   const sendData = () => {
     onSendData("Hello Parent! 👋");
   };

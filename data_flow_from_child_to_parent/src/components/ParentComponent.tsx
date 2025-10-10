@@ -1,7 +1,8 @@
  import {useState} from 'react';
+ import React from "react";
  import ChildComponent from './ChildComponent';
 
- function ParentComponent() {
+ const ParentComponent :React.FC = () => {
   const [message, setMessage] = useState('');
 
   const handleChildData = (dataFromChild: string) => {
